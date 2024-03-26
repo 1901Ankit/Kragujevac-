@@ -16998,6 +16998,20 @@ font-size: 31px;
   .qujs{
     font-size: 19px;
   }
+  .rts-about-details {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.hba{
+  padding-bottom: 0px !important;
+}
+.hus {
+  padding: 20px 0 50px 0 !important;
+}
+.copy{
+  font-size: 14px !important;
+}
 }
 .rts-hero-slider-active .swiper-slide .rts-slider-content .rts-slider-desc {
   font-size: 18px;
@@ -18246,12 +18260,12 @@ font-size: 31px;
 
 .rts-about-details {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   gap: 30px;
 }
 .rts-about-details .single-about-info {
   background: var(--rt-primary);
-  padding: 30px 30px 35px 40px;
+  padding: 20px 20px 25px 30px;
 }
 .rts-about-details .single-about-info .content {
   display: flex;
