@@ -299,27 +299,27 @@
                             a global perspective among its students. With its rich heritage and commitment to
                             excellence, the University of Kragujevac continues to shape future leaders and contribute to
                             societal progress.</p>
-                            <div class="rts-about-details">
-                                <div class="single-about-info">
-                                    <div class="content">
-                                        <h3 class="title kusds" id="number1">48874</h3>
-                                        <img src="assets/images/icon/11.svg" alt="">
-                                    </div>
-                                    <div class="desc ">
-                                        <p class="kusd"> University of Kragujevac Students</p>
-                                    </div>
+                        <div class="rts-about-details">
+                            <div class="single-about-info">
+                                <div class="content">
+                                    <h3 class="title kusds" id="number1">48874</h3>
+                                    <img src="assets/images/icon/11.svg" alt="">
                                 </div>
-                                <div class="single-about-info">
-                                    <div class="content">
-                                        <h3 class="title kusds" id="number2">5,198</h3>
-                                        <img src="assets/images/icon/12.svg" alt="">
-                                    </div>
-                                    <div class="desc ">
-                                        <p class="kusd"> University of Kragujevac Faculty and Staff</p>
-                                    </div>
+                                <div class="desc ">
+                                    <p class="kusd"> University of Kragujevac Students</p>
                                 </div>
-                               
                             </div>
+                            <div class="single-about-info">
+                                <div class="content">
+                                    <h3 class="title kusds" id="number2">5,198</h3>
+                                    <img src="assets/images/icon/12.svg" alt="">
+                                </div>
+                                <div class="desc ">
+                                    <p class="kusd"> University of Kragujevac Faculty and Staff</p>
+                                </div>
+                            </div>
+
+                        </div>
                         <!-- <div class="about__right--content--vision">
                             <div class="mision">
                                 <div class="mision__icon">
@@ -788,7 +788,9 @@
                                         <i class="fa-sharp fa-light fa-star"></i>
                                     </div>
                                     <p class="rts__single--testimonial--text">
-                                        The faculty of philosophy in Kragujevac must address student concerns by promoting greater collaboration between professors and students, thus elevating the educational experience.
+                                        The faculty of philosophy in Kragujevac must address student concerns by
+                                        promoting greater collaboration between professors and students, thus elevating
+                                        the educational experience.
                                     </p>
                                     <div class="rts__single--testimonial--author">
                                         <div class="rts__single--testimonial--author--meta">
@@ -851,7 +853,9 @@
                                         <i class="fa-sharp fa-light fa-star"></i>
                                     </div>
                                     <p class="rts__single--testimonial--text">
-                                      The faculty of philosophy in Kragujevac must address student concerns by promoting greater collaboration between professors and students, thus elevating the educational experience.
+                                        The faculty of philosophy in Kragujevac must address student concerns by
+                                        promoting greater collaboration between professors and students, thus elevating
+                                        the educational experience.
                                     </p>
                                     <div class="rts__single--testimonial--author">
                                         <div class="rts__single--testimonial--author--meta">
@@ -1063,7 +1067,7 @@
                     <div class="footer__widget">
                         <h6 class="footer__widget--title">Quick Button</h6>
                         <div class="footer__widget--button">
-                            <a href="index.html" class="cta__button active">APPLYING</a>
+                            <a href="#contact" class="cta__button active">APPLYING</a>
                             <a href="index.html" class="cta__button">HOME PAGE</a>
                         </div>
                     </div>
@@ -1079,7 +1083,8 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="copyright__wrapper">
-                        <p class="copy">Copyright &copy; 2024 All Rights Reserved by <a href="#">Kragujevac</a></p>
+                        <p class="copy">Copyright &copy; 2024 All Rights Reserved by <a href="index.html">Kragujevac</a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -1260,6 +1265,7 @@
 
 
         function sendCase() {
+            // Retrieve form values
             let firstname = document.getElementById("firstname").value;
             let lastname = document.getElementById("lastname").value;
             let address = document.getElementById("address").value;
@@ -1271,7 +1277,36 @@
             let zipcode = document.getElementById("zipcode").value;
             let message = document.getElementById("message").value;
 
-            emailjs.init("fSjEBmQ1V-58CY5U6"); // Replace "your_user_id" with your actual user ID
+            // Regular expressions for validation
+            let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            let mobileRegex = /^\d{10}$/;
+            let dateRegex = /^\d{2}\/\d{2}\/\d{2}$/;
+            let zipcodeRegex = /^\d{6}$/;
+
+            // Validate each field
+            if (firstname === "" || lastname === "" || address === "" || country === "" || email === "" || mobile === "" || date === "" || city === "" || zipcode === "" || message === "") {
+                alert("Please fill in all fields.");
+                return;
+            }
+            if (!emailRegex.test(email)) {
+                alert("Please enter a valid email address.");
+                return;
+            }
+            if (!mobileRegex.test(mobile)) {
+                alert("Please enter a valid 10-digit mobile number.");
+                return;
+            }
+            if (!dateRegex.test(date)) {
+                alert("Please enter a valid date in the format dd/mm/yy.");
+                return;
+            }
+            if (!zipcodeRegex.test(zipcode)) {
+                alert("Please enter a valid 5-digit zip code.");
+                return;
+            }
+
+            // If all fields are valid, proceed to send email
+            emailjs.init("fSjEBmQ1V-58CY5U6");
             let params = {
                 firstname: firstname,
                 lastname: lastname,
@@ -1284,8 +1319,8 @@
                 zipcode: zipcode,
                 message: message
             };
-            let serviceID = "service_sp6umke"; // Replace "your_service_id" with your actual service ID
-            let templateID = "template_dyzdswg"; // Replace "your_template_id" with your actual template ID
+            let serviceID = "service_sp6umke";
+            let templateID = "template_dyzdswg";
 
             emailjs.send(serviceID, templateID, params)
                 .then(function (response) {

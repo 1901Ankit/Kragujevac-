@@ -24728,3 +24728,13 @@ font-size: 31px;
 .kusds{
   font-size: 35px !important;
 }
+
+.error {
+  border-color: red; /* Example of error style, you can adjust it according to your design */
+}
+
+.error-msg {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
