@@ -27,6 +27,9 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
     </script>
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body class="page">
@@ -36,49 +39,46 @@
             <div class="row">
                 <div class="col-xl-12">
                     <div class="header__wrapper">
-                        <div class="header__logo">
-                            <a href="index.html" class="header__logo--link">
-                                <img src="assets/images/logo/University of Kragujevac Icon.svg" class="navbimages"
-                                    alt="unipix">
-                            </a>
+                        <div class="header__left">
+                            <div class="header__logo">
+                                <a href="index.html" class="header__logo--link">
+                                    <img src="assets/images/logo/University of Kragujevac Icon.svg" class="navbimages1"
+                                        alt="">
+                                </a>
+                            </div>
                         </div>
                         <div class="header__menu">
                             <div class="navigation">
                                 <nav class="navigation__menu">
                                     <ul>
-
                                         <li class="navigation__menu--item has-child has-arrow">
                                             <a href="#about" class="navigation__menu--item__link">About</a>
-
-                                        </li>
-                                        <li class="navigation__menu--item has-child has-arrow">
-                                            <a href="#history" class="navigation__menu--item__link">History</a>
-
                                         </li>
                                         <li class="navigation__menu--item has-child has-arrow">
                                             <a href="#course" class="navigation__menu--item__link">Course</a>
-
                                         </li>
                                         <li class="navigation__menu--item has-child has-arrow">
                                             <a href="#serbia" class="navigation__menu--item__link">Kragujevac</a>
-
                                         </li>
                                         <li class="navigation__menu--item has-child has-arrow">
                                             <a href="#testimonial" class="navigation__menu--item__link">Testimonial</a>
-
                                         </li>
-                                        <li class="navigation__menu--item  has-child has-arrow">
+                                        <li class="navigation__menu--item has-child has-arrow">
                                             <a href="#contact" class="navigation__menu--item__link">Contact</a>
                                         </li>
                                     </ul>
                                 </nav>
                             </div>
                         </div>
+                        <div id="menu-btn" class="menu__trigger">
+                            <img src="assets/images/icon/bar__line.svg" alt="bar">
+                        </div>
                         <div class="header__right">
-                            <div class="header__right--item">
-                                <div id="menu-btn" class="menu__trigger">
-                                    <img src="assets/images/icon/bar__line.svg" alt="bar">
-                                </div>
+                            <div class="logoheader">
+                                <a href="index.html" class="header__logo--link">
+                                    <img src="assets/Excel Education Group Logo Final.svg" class="navbimages"
+                                        alt="">
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -86,6 +86,8 @@
             </div>
         </div>
     </header>
+
+
     <!-- header area end -->
     <!-- hero slider start -->
     <div class="banner v__2">
@@ -104,7 +106,7 @@
                     <div class="swiper-slide swiper-slide-duplicate swiper-slide-next swiper-slide-duplicate-prev"
                         data-swiper-slide-index="1" role="group" aria-label="2 / 2"
                         style="width: 1440px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
-                        <div class="banner__wrapper--bg" style="background-image: url(assets/images/banner/02.jpg);">
+                        <div class="banner__wrapper--bg" style="background-image: url(assets/newbanner/2.jpeg);">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-lg-12">
@@ -138,7 +140,7 @@
                     <div class="swiper-slide swiper-slide-duplicate-active" data-swiper-slide-index="0" role="group"
                         aria-label="1 / 2"
                         style="width: 1440px; opacity: 1; transform: translate3d(-1440px, 0px, 0px); transition-duration: 0ms;">
-                        <div class="banner__wrapper--bg" style="background-image: url(assets/images/banner/01.jpg);">
+                        <div class="banner__wrapper--bg" style="background-image: url(assets/newbanner/2.jpeg);">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-lg-12">
@@ -173,7 +175,40 @@
                     <div class="swiper-slide swiper-slide-prev swiper-slide-duplicate-next" data-swiper-slide-index="1"
                         role="group" aria-label="2 / 2"
                         style="width: 1440px; opacity: 1; transform: translate3d(-2880px, 0px, 0px); transition-duration: 0ms;">
-                        <div class="banner__wrapper--bg" style="background-image: url(assets/images/banner/02.jpg);">
+                        <div class="banner__wrapper--bg" style="background-image: url(assets/newbanner/3.jpg);">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="banner__slides--container banner__height">
+                                            <div class="banner__slides--content">
+                                                <div class="banner__slides--content--sub">
+                                                    <img src="assets/images/icon/e-cap.svg" alt="cap"> Welcome to
+                                                    University of Kragujevac!
+
+                                                </div>
+                                                <h1 class="banner__slides--content--title umloc">
+
+                                                    UNLOCK YOUR MBBS DREAMS
+                                                    <span class="text-white qujs">
+                                                        Quality Education, Affordable Investment
+                                                    </span>
+                                                </h1>
+                                                <div class="rts-theme-btn btn-arrow plunow"><a href="#contact"
+                                                        class="snch">APPLY NOW
+                                                        <span><i class="fa-thin fa-arrow-right"></i></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-prev swiper-slide-duplicate-next" data-swiper-slide-index="1"
+                        role="group" aria-label="4 / 2"
+                        style="width: 1440px; opacity: 1; transform: translate3d(-2880px, 0px, 0px); transition-duration: 0ms;">
+                        <div class="banner__wrapper--bg" style="background-image: url(assets/newbanner/4.jpeg);">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-lg-12">
@@ -204,10 +239,10 @@
                         </div>
                     </div>
                     <!-- single slides end -->
-                    <div class="swiper-slide swiper-slide-duplicate swiper-slide-visible swiper-slide-active"
-                        data-swiper-slide-index="0" role="group" aria-label="1 / 2"
-                        style="width: 1440px; opacity: 1; transform: translate3d(-4320px, 0px, 0px); transition-duration: 0ms;">
-                        <div class="banner__wrapper--bg" style="background-image: url(assets/images/banner/01.jpg);">
+                    <div class="swiper-slide swiper-slide-prev swiper-slide-duplicate-next" data-swiper-slide-index="1"
+                        role="group" aria-label="3 / 2"
+                        style="width: 1440px; opacity: 1; transform: translate3d(-2880px, 0px, 0px); transition-duration: 0ms;">
+                        <div class="banner__wrapper--bg" style="background-image: url(assets/newbanner/5.jpeg);">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-lg-12">
@@ -246,14 +281,48 @@
                     <a href="academic.html" class="nav__description">Cancer prevention, diagnosis, and treatment.</a>
                 </div>
                 <div class="banner__slides--navigation--single">
-                    <h5 class="nav__title">Engineering</h5>
-                    <a href="academic.html" class="nav__description">Innovation, design, construction, problem-solving,
-                        technology.</a>
+                    <h5 class="nav__title">Non-Medical Course</h5>
+                    <a href="academic.html" class="nav__description">Influential, significant, powerful, meaningful,
+                        profound.
+                    </a>
                 </div>
             </div>
         </div>
     </div>
     <!-- hero slider  end -->
+    <!-- <a href="#" class="wppBtn pulse"></a> -->
+    <a href="https://wa.me/917508710622" class="wppBtn pulse" target="_blank"></a>
+
+
+    <!-- <nameslider> -->
+    <div class="marquee">
+        <div class="single__marque__item v__2">
+            <ul class="single__marque__item__list">
+                <li class="single__marque__item__list__text">Admission Open for September 2024 Intake Call Now: - +91
+                    7508710622 <span><img src="assets/images/icon/marquee__vector.svg" alt=""></span></li>
+                <li class="single__marque__item__list__text">Admission Open for September 2024 Intake Call Now: - +91
+                    7508710622 <span><img src="assets/images/icon/marquee__vector.svg" alt=""></span></li>
+                <li class="single__marque__item__list__text">Admission Open for September 2024 Intake Call Now: - +91
+                    7508710622 <span><img src="assets/images/icon/marquee__vector.svg" alt=""></span></li>
+                <li class="single__marque__item__list__text">Admission Open for September 2024 Intake Call Now: - +91
+                    7508710622 <span><img src="assets/images/icon/marquee__vector.svg" alt=""></span></li>
+                <li class="single__marque__item__list__text">Admission Open for September 2024 Intake Call Now: - +91
+                    7508710622 <span><img src="assets/images/icon/marquee__vector.svg" alt=""></span></li>
+            </ul>
+            <ul class="single__marque__item__list">
+                <li class="single__marque__item__list__text">Admission Open for September 2024 Intake Call Now: - +91
+                    7508710622 <span><img src="assets/images/icon/marquee__vector.svg" alt=""></span></li>
+                <li class="single__marque__item__list__text">Admission Open for September 2024 Intake Call Now: - +91
+                    7508710622 <span><img src="assets/images/icon/marquee__vector.svg" alt=""></span></li>
+                <li class="single__marque__item__list__text">Admission Open for September 2024 Intake Call Now: - +91
+                    7508710622 <span><img src="assets/images/icon/marquee__vector.svg" alt=""></span></li>
+                <li class="single__marque__item__list__text">Admission Open for September 2024 Intake Call Now: - +91
+                    7508710622 <span><img src="assets/images/icon/marquee__vector.svg" alt=""></span></li>
+                <li class="single__marque__item__list__text">Admission Open for September 2024 Intake Call Now: - +91
+                    7508710622 <span><img src="assets/images/icon/marquee__vector.svg" alt=""></span></li>
+            </ul>
+        </div>
+    </div>
     <!-- About -->
     <section class="about v__2 pt--120 pb--80 hba" id="about">
         <div class="container">
@@ -288,21 +357,30 @@
                 <div class="col-lg-6 col-md-9">
                     <div class="about__right--content">
 
-                        <h2 class="rts__section--title mb--40">About University</h2>
-                        <p class="about__right--content--description">The University of Kragujevac, founded in 1838, is
+                        <h2 class="rts__section--title mb--40" data-aos="flip-up" data-aos-offset="20"
+                            data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                            data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top">About
+                            University</h2>
+                        <p class="about__right--content--description" data-aos="flip-down" data-aos-offset="20"
+                            data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                            data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top">The
+                            University of Kragujevac, founded in 1838, is
                             a distinguished institution in Serbia. It offers a wide array of academic disciplines and
                             modern facilities for research and learning. Renowned for its esteemed faculty, the
                             university fosters critical thinking and innovation among its students. Beyond academics,
                             the campus buzzes with cultural events and sports activities, promoting a vibrant student
                             life. </p>
-                        <p class="about__right--content--description">Through international collaborations, it nurtures
+                        <p class="about__right--content--description" data-aos="flip-down" data-aos-offset="20"
+                            data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                            data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top">Through
+                            international collaborations, it nurtures
                             a global perspective among its students. With its rich heritage and commitment to
                             excellence, the University of Kragujevac continues to shape future leaders and contribute to
                             societal progress.</p>
                         <div class="rts-about-details">
                             <div class="single-about-info">
                                 <div class="content">
-                                    <h3 class="title kusds" id="number1">48874</h3>
+                                    <h3 class="title kusds" id="number1">15000</h3>
                                     <img src="assets/images/icon/11.svg" alt="">
                                 </div>
                                 <div class="desc ">
@@ -311,7 +389,7 @@
                             </div>
                             <div class="single-about-info">
                                 <div class="content">
-                                    <h3 class="title kusds" id="number2">5,198</h3>
+                                    <h3 class="title kusds" id="number2">1300+</h3>
                                     <img src="assets/images/icon/12.svg" alt="">
                                 </div>
                                 <div class="desc ">
@@ -320,26 +398,7 @@
                             </div>
 
                         </div>
-                        <!-- <div class="about__right--content--vision">
-                            <div class="mision">
-                                <div class="mision__icon">
-                                    <img src="assets/images/icon/mission.svg" alt="">
-                                </div>
-                                <div class="mision__title">
-                                    University Mission
-                                    Statement
-                                </div>
-                            </div>
-                            <div class="vision">
-                                <div class="vision__icon">
-                                    <img src="assets/images/icon/vission.svg" alt="">
-                                </div>
-                                <div class="vision__title">
-                                    University Vision
-                                    Achievement
-                                </div>
-                            </div>
-                        </div> -->
+
                         <div class="rts-theme-btn btn-arrow mt-5"><a href="#contact" class="snch">APPLY NOW
                                 <span><i class="fa-thin fa-arrow-right"></i></span>
                             </a>
@@ -354,52 +413,8 @@
 
 
     <!-- history -->
-    <div class="rts-history mt-5" id="history">
-        <div class="container">
-            <div class="row g-5 justify-content-md-center justify-content-start align-items-center">
-                <div class="col-lg-6 col-md-11">
-                    <div class="rts-history-image">
-                        <img src="assets/images/about/39304.jpg" alt="history">
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-11">
-                    <div class="rts-history-section">
-                        <h2 class="rts__section--title mb--40">The history of Kragujevac</h2>
 
-                        <p>
-
-                            Kragujevac, located in central Serbia, has a diverse history dating back centuries, from its
-                            medieval origins to its role as an Ottoman administrative center. In the 19th century, it
-                            emerged as a cultural and educational hub, marked by the establishment of Serbia's first
-                            modern secondary school. The city's significance continued to grow as it became the capital
-                            of the Principality of Serbia in 1818, undergoing rapid urbanization and industrial
-                            development.
-                            <span class="d-block mb--20"></span>
-                            However, it also faced tragedy during World War II with the Kragujevac massacre, leaving a
-                            lasting impact on its history. In the post-war era, Kragujevac underwent reconstruction and
-                            became a vital industrial and educational center within Yugoslavia. Today, it remains an
-                            important city in Serbia, blending its rich past with modern vibrancy.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <!-- history end-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <!-- program -->
     <section class="rts__section rts__light rtes-section-padding mt-5" id="course">
         <div class="container">
@@ -422,14 +437,27 @@
                             <div class="col-lg-4 single-item">
                                 <div class="item">
                                     <i class="fa-solid fa-stethoscope"></i>
-                                    <h4 class="rts__section--title">MEDICAL SCIENCE</h4>
-                                    <p>Medical science encompasses the study, diagnosis, treatment, and prevention of
-                                        diseases to improve healthcare outcomes.
-                                    </p>
-                                    <ul>
+                                    <h5 class="rts__section--title">MEDICAL SCIENCE</h5>
+                                    <ul class="tution__single--box--feature">
+                                        <li>
+
+                                            <span>
+                                                MBBS</span>
+                                        </li>
+                                        <li>
+
+                                            <span> PHARMACY</span>
+                                        </li>
+                                        <li>
+
+                                            <span> NURSING</span>
+                                        </li>
+
+                                    </ul>
+                                    <ul class="tution__single--box--feature">
                                         <li>
                                             <span>Phone</span>
-                                            <p>+ (381) 34 370-270</p>
+                                            <p>+ (91) 9815875173</p>
                                         </li>
                                     </ul>
                                 </div>
@@ -446,16 +474,24 @@
                             <div class="col-lg-4 single-item">
                                 <div class="item">
                                     <i class="fa-solid fa-gears"></i>
-                                    <h4 class="rts__section--title">engineering</h4>
-                                    <p>
-                                        Engineering at the University of Novi Sad drives innovation and addresses
-                                        real-world
-                                        challenges, shaping the future of technology and industry.
-                                    </p>
-                                    <ul>
+                                    <h5 class="rts__section--title">NON-MEDICAL COURSES</h5>
+                                    <ul class="tution__single--box--feature">
+                                        <li>
+
+                                            <span>
+                                                COMPUTER ENGENEERING</span>
+                                        </li>
+                                        <li>
+
+                                            <span> ECONOMICS</span>
+                                        </li>
+
+
+                                    </ul>
+                                    <ul class="tution__single--box--feature">
                                         <li>
                                             <span>Phone</span>
-                                            <p>+ (381) 34 370-270</p>
+                                            <p>+ (91) 9815875173</p>
                                         </li>
                                     </ul>
                                 </div>
@@ -486,10 +522,10 @@
                         <div class="col-md-4 col-sm-6 equal-height">
                             <div class="itemmeid">
                                 <i class="fa-solid fa-bed"></i>
-                                <h4 class="">Bachelor of Dental Surgery </h4>
+                                <h4 class=""> Bachelor of Pharmacy </h4>
                                 <p>
-                                    BDS: Training dental professionals to transform smiles & safeguard oral health
-                                    through specialized surgical expertise.
+                                    BPHARM: Essential expertise, improving health outcomes through precise medication
+                                    management, ensuring wellness and vitality.
                                 </p>
                             </div>
                         </div>
@@ -499,10 +535,10 @@
                         <div class="col-md-4 col-sm-6 equal-height">
                             <div class="itemmeid">
                                 <i class="fa-solid fa-truck-medical"></i>
-                                <h4 class="">Bachelor of Physiotherapy</h4>
+                                <h4 class="">Bachelor Science of Nursing</h4>
                                 <p>
-                                    BPT: Transforming lives through targeted rehabilitation, restoring movement, and
-                                    alleviating pain for enhanced well-being.
+                                    B.SC NURSING: Fostering leaders with compassion, skill, and expertise to
+                                    revolutionize healthcare delivery.
                                 </p>
                             </div>
                         </div>
@@ -512,10 +548,10 @@
                         <div class="col-md-4 col-sm-6 equal-height">
                             <div class="itemmeid">
                                 <i class="fa-light fa-user-nurse"></i>
-                                <h4 class="">Bachelor of Ayurvedic Medicine and Surgery </h4>
+                                <h4 class="">Computer Engineering </h4>
                                 <p>
-                                    BAMS: Harnessing ancient wisdom to heal & harmonize body, mind, and spirit, shaping
-                                    future of holistic healthcare.
+                                    CS: Architecting tomorrow's technology by melding hardware and software innovation
+                                    for a digitally interconnected world.
                                 </p>
                             </div>
                         </div>
@@ -525,10 +561,10 @@
                         <div class="col-md-4 col-sm-6 equal-height">
                             <div class="itemmeid">
                                 <i class="fa-solid fa-bed"></i>
-                                <h4 class="">Bachelor of Naturopathy and Yoga </h4>
+                                <h4 class="">Economics</h4>
                                 <p>
-                                    BNY: Transforming health with natural remedies and yoga for holistic well-being and
-                                    empowerment.
+                                    Economics: Unraveling the intricate web of human choices, resource allocation, and
+                                    societal prosperity with analytical precision.
                                 </p>
                             </div>
                         </div>
@@ -553,7 +589,7 @@
     </section>
 
 
-    <section class="rts__section  rtes-section-padding hus mt-5">
+    <section class="rts__section  rtes-section-padding hus">
         <div class="rts-campus pt--100 rts-campus-bg mobile-padding moving">
             <div class="container">
                 <div class="row justify-content-sm-center justify-content-lg-start">
@@ -562,8 +598,8 @@
                             <h2 class="section-title rt-white mb--55">
                                 Embark on a Journey: Unveiling the Story of Kragujevac University
                             </h2>
-                            <a href="index.html" class="about-btn rts-nbg-btn btn-arrow 
-                    rt-white">Learn More <span><i class="fa-sharp fa-regular fa-arrow-right"></i></span></a>
+                            <!-- <a href="index.html" class="about-btn rts-nbg-btn btn-arrow 
+                    rt-white">Learn More <span><i class="fa-sharp fa-regular fa-arrow-right"></i></span></a> -->
 
                         </div>
                     </div>
@@ -584,7 +620,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="bottom-text rt-clip-text">CAMPUS TOUR</div>
+                <!-- <div class="bottom-text rt-clip-text">CAMPUS TOUR</div> -->
                 <div class="rt-shape">
                     <img class="rt-shape__1" data-speed="0.04" src="assets/images/feature/shape/01.png" alt="">
                     <img class="shape rt-shape__2" data-speed="0.04" src="assets/images/feature/shape/02.png" alt=""
@@ -602,7 +638,7 @@
 
     <!-- program end -->
     <!-- <living> -->
-    <div class="rts-history mt-5 " id="serbia">
+    <!-- <div class="rts-history mt-5 " id="serbia">
         <div class="container">
             <div class="row g-5 mt-5 histru justify-content-md-center justify-content-start align-items-center">
                 <div class="col-lg-6 col-md-11">
@@ -633,10 +669,10 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
-    <div class="rts-history mt-5">
+    <!-- <div class="rts-history mt-5">
         <div class="container">
             <div class="row g-5 justify-content-md-center justify-content-start align-items-center">
                 <div class="col-lg-6 col-md-11">
@@ -663,9 +699,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
-    <div class="rts-history mb-5 mt-5">
+    <!-- <div class="rts-history mb-5 mt-5">
         <div class="container">
             <div class="row g-5 justify-content-md-center justify-content-start align-items-center mt-5">
                 <div class="col-lg-6 col-md-11">
@@ -692,7 +728,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
 
@@ -701,7 +737,7 @@
             <div class="row g-5 justify-content-md-center justify-content-start align-items-center mt-5">
                 <div class="col-lg-6 col-md-11">
                     <div class="rts-video-section height-500 mb--50">
-                        <a href="https://www.youtube.com/watch?v=RO-4rpSooTk"
+                        <a href="https://www.youtube.com/watch?v=qPef0oEYOds"
                             class="rts-video-section-player popup-video video-btn">
                             <i class="fa-sharp fa-solid fa-play"></i>
                         </a>
@@ -731,6 +767,205 @@
         </div>
     </div>
 
+    <!-- <LOGOSUNIVERSITY> -->
+    <div class="rts-brand v_1 pb--50">
+        <div class="container">
+            <div class="row">
+                <div class="rts__section--wrapper">
+                    <h2 class="rts__section--title mb--40">universities are recognized by :</h2>
+                    <div class="rts__section--link">
+
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-md-center">
+                <div class="col-lg-12 col-md-11">
+                    <div class="rts-brand-slider swiper swiper-data swiper-initialized swiper-horizontal swiper-pointer-events"
+                        data-swiper="{
+                        &quot;slidesPerView&quot;:6,
+                        &quot;loop&quot;: true,
+                        &quot;autoplay&quot;:{
+                            &quot;delay&quot;:&quot;3000&quot;
+                        },
+                        &quot;breakpoints&quot;:{
+                            &quot;320&quot;:{
+                                &quot;slidesPerView&quot;: 3,
+                                &quot;centeredSlides&quot;: true
+                            },
+                            &quot;575&quot;:{
+                                &quot;slidesPerView&quot;: 4,
+                                &quot;centeredSlides&quot;: true
+                            },
+                            &quot;768&quot;:{
+                                &quot;slidesPerView&quot;: 5,
+                                &quot;centeredSlides&quot;: true
+                            },
+                            &quot;991&quot;:{
+                                &quot;slidesPerView&quot;: 6,
+                                &quot;centeredSlides&quot;: true
+                            },
+                            &quot;1201&quot;:{
+                                &quot;slidesPerView&quot;: 6
+                            }
+                        }
+                }">
+                        <div class="swiper-wrapper" id="swiper-wrapper-108d2179ffe19d8a8" aria-live="off"
+                            style="transition-duration: 0ms; transform: translate3d(-2042.5px, 0px, 0px);">
+                            <div class="swiper-slide swiper-slide-duplicate" role="group" aria-label="1 / 6"
+                                style="width: 185px; margin-right: 30px;" data-swiper-slide-index="0">
+                                <div class="single-brand-logo">
+                                    <a href="#">
+                                        <img src="assets/images/brand/01.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-duplicate" role="group" aria-label="2 / 6"
+                                style="width: 185px; margin-right: 30px;" data-swiper-slide-index="1">
+                                <div class="single-brand-logo">
+                                    <a href="#">
+                                        <img src="assets/images/brand/02.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-duplicate" role="group" aria-label="3 / 6"
+                                style="width: 185px; margin-right: 30px;" data-swiper-slide-index="2">
+                                <div class="single-brand-logo">
+                                    <a href="#">
+                                        <img src="assets/images/brand/03.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-duplicate" role="group" aria-label="4 / 6"
+                                style="width: 185px; margin-right: 30px;" data-swiper-slide-index="3">
+                                <div class="single-brand-logo">
+                                    <a href="#">
+                                        <img src="assets/images/brand/04.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-duplicate" role="group" aria-label="5 / 6"
+                                style="width: 185px; margin-right: 30px;" data-swiper-slide-index="4">
+                                <div class="single-brand-logo">
+                                    <a href="#">
+                                        <img src="assets/images/brand/05.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" role="group"
+                                aria-label="6 / 6" style="width: 185px; margin-right: 30px;"
+                                data-swiper-slide-index="5">
+                                <div class="single-brand-logo">
+                                    <a href="#">
+                                        <img src="assets/images/brand/06.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-duplicate-active" role="group" aria-label="1 / 6"
+                                style="width: 185px; margin-right: 30px;" data-swiper-slide-index="0">
+                                <div class="single-brand-logo">
+                                    <a href="#">
+                                        <img src="assets/images/brand/01.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-duplicate-next" role="group" aria-label="2 / 6"
+                                style="width: 185px; margin-right: 30px;" data-swiper-slide-index="1">
+                                <div class="single-brand-logo">
+                                    <a href="#">
+                                        <img src="assets/images/brand/02.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" role="group" aria-label="3 / 6"
+                                style="width: 185px; margin-right: 30px;" data-swiper-slide-index="2">
+                                <div class="single-brand-logo">
+                                    <a href="#">
+                                        <img src="assets/images/brand/03.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" role="group" aria-label="4 / 6"
+                                style="width: 185px; margin-right: 30px;" data-swiper-slide-index="3">
+                                <div class="single-brand-logo">
+                                    <a href="#">
+                                        <img src="assets/images/brand/04.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" role="group" aria-label="5 / 6"
+                                style="width: 185px; margin-right: 30px;" data-swiper-slide-index="4">
+                                <div class="single-brand-logo">
+                                    <a href="#">
+                                        <img src="assets/images/brand/05.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-prev" role="group" aria-label="6 / 6"
+                                style="width: 185px; margin-right: 30px;" data-swiper-slide-index="5">
+                                <div class="single-brand-logo">
+                                    <a href="#">
+                                        <img src="assets/images/brand/06.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-duplicate swiper-slide-active" role="group"
+                                aria-label="1 / 6" style="width: 185px; margin-right: 30px;"
+                                data-swiper-slide-index="0">
+                                <div class="single-brand-logo">
+                                    <a href="#">
+                                        <img src="assets/images/brand/01.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-duplicate swiper-slide-next" role="group"
+                                aria-label="2 / 6" style="width: 185px; margin-right: 30px;"
+                                data-swiper-slide-index="1">
+                                <div class="single-brand-logo">
+                                    <a href="#">
+                                        <img src="assets/images/brand/02.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-duplicate" role="group" aria-label="3 / 6"
+                                style="width: 185px; margin-right: 30px;" data-swiper-slide-index="2">
+                                <div class="single-brand-logo">
+                                    <a href="#">
+                                        <img src="assets/images/brand/03.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-duplicate" role="group" aria-label="4 / 6"
+                                style="width: 185px; margin-right: 30px;" data-swiper-slide-index="3">
+                                <div class="single-brand-logo">
+                                    <a href="#">
+                                        <img src="assets/images/brand/04.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-duplicate" role="group" aria-label="5 / 6"
+                                style="width: 185px; margin-right: 30px;" data-swiper-slide-index="4">
+                                <div class="single-brand-logo">
+                                    <a href="#">
+                                        <img src="assets/images/brand/05.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" role="group"
+                                aria-label="6 / 6" style="width: 185px; margin-right: 30px;"
+                                data-swiper-slide-index="5">
+                                <div class="single-brand-logo">
+                                    <a href="#">
+                                        <img src="assets/images/brand/06.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- student feedback -->
     <section class="feedback rts-section-padding" id="testimonial">
@@ -777,6 +1012,7 @@
                     }
                 }'>
                         <div class="swiper-wrapper">
+
                             <!-- single slide -->
                             <div class="swiper-slide">
                                 <div class="rts__single--testimonial">
@@ -788,9 +1024,14 @@
                                         <i class="fa-sharp fa-light fa-star"></i>
                                     </div>
                                     <p class="rts__single--testimonial--text">
-                                        The faculty of philosophy in Kragujevac must address student concerns by
-                                        promoting greater collaboration between professors and students, thus elevating
-                                        the educational experience.
+                                        “Hello Everyone !!!
+                                        <br> My name is Aastha Sahu and I am from Mumbai , India. I am 5th year student
+                                        of University of kragujevac, Serbia. Here in
+                                        Language barrier, everyone speaks very well English even we have classes in
+                                        Hospitals also and there patients also speaks good English. All my
+                                        admission process is done by Sun Education which was very smooth and hassle
+                                        free.
+                                        <br>Thank you”
                                     </p>
                                     <div class="rts__single--testimonial--author">
                                         <div class="rts__single--testimonial--author--meta">
@@ -798,8 +1039,8 @@
                                                 <img src="assets/images/testimonial/author-1.png" alt="author">
                                             </div>
                                             <div class="rts__author--info">
-                                                <h5 class="mb-0">Emma Elizabeth</h5>
-                                                <!-- <span class="designation">Assistant Teacher</span> -->
+                                                <h5 class="mb-0">Aastha Sahu , Mumbai</h5>
+
                                             </div>
                                         </div>
                                         <div class="rts__single--testimonial--quote">
@@ -820,10 +1061,13 @@
                                         <i class="fa-sharp fa-light fa-star"></i>
                                     </div>
                                     <p class="rts__single--testimonial--text">
-                                        However, faculty of philosophy in Kragujevac would be a mediocre experience,
-                                        purely
-                                        because most of the professors were not interested in cooperating with the
-                                        students.
+                                        I am Sudhir Khari and currently I am doing Medicine Course from University of
+                                        Kragujevac in 5th year. Every day we use to visit Clinical Centers and
+                                        we happily attend our lectures. Teachers are very cooperative. Most of Our
+                                        practical classes are in Hospital where we can interact one to one
+                                        directly with the patient. Moreover, Locals are very familiar to us and speak
+                                        good English and atmosphere is very good here in Kragujevac. I am
+                                        enjoying study here.
                                     </p>
                                     <div class="rts__single--testimonial--author">
                                         <div class="rts__single--testimonial--author--meta">
@@ -831,7 +1075,7 @@
                                                 <img src="assets/images/testimonial/author-2.png" alt="author">
                                             </div>
                                             <div class="rts__author--info">
-                                                <h5 class="mb-0">Samantha Willow</h5>
+                                                <h5 class="mb-0">Sudhir Khari , Greater Noida</h5>
                                                 <!-- <span class="designation"> Teacher</span> -->
                                             </div>
                                         </div>
@@ -853,9 +1097,15 @@
                                         <i class="fa-sharp fa-light fa-star"></i>
                                     </div>
                                     <p class="rts__single--testimonial--text">
-                                        The faculty of philosophy in Kragujevac must address student concerns by
-                                        promoting greater collaboration between professors and students, thus elevating
-                                        the educational experience.
+                                        Hello,
+
+                                        <br>I am Ravi from Agra, Uttar Pradesh. I was studying in Ukraine and I took
+                                        transfer in University of Kragujevac. It’s very familiar here. University
+                                        and teachers are helpful & cooperative. Kragujevac city is very beautiful and
+                                        people are very nice and kind to us. For new students who dreamt
+                                        about MBBS Course can come Serbia , University of Kragujevac and fulfill their
+                                        dream.
+                                        <br> Thank you.
                                     </p>
                                     <div class="rts__single--testimonial--author">
                                         <div class="rts__single--testimonial--author--meta">
@@ -863,8 +1113,252 @@
                                                 <img src="assets/images/testimonial/author-3.png" alt="author">
                                             </div>
                                             <div class="rts__author--info">
-                                                <h5 class="mb-0">Zent Ekizie</h5>
-                                                <!-- <span class="designation">Assistant Teacher</span> -->
+                                                <h5 class="mb-0">Raviraj Yadav , Agra - Uttar Pradesh</h5>
+
+                                            </div>
+                                        </div>
+                                        <div class="rts__single--testimonial--quote">
+                                            <img src="assets/images/testimonial/quote.svg" alt="quote">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single slide end -->
+                            <!-- single slide -->
+                            <div class="swiper-slide">
+                                <div class="rts__single--testimonial">
+                                    <div class="rts__rating--star">
+                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                        <i class="fa-sharp fa-light fa-star"></i>
+                                    </div>
+                                    <p class="rts__single--testimonial--text">
+                                        Hi,
+                                        <br>
+                                        myself Jayalekshmi and I am from kerala and I am 4th year student of this
+                                        university. Serbia is very nice destination for medical education Also
+                                        this university of kragujevac I really like it. More Clinical exposure here and
+                                        the University is very good. <br>Thank you !!!
+                                    </p>
+                                    <div class="rts__single--testimonial--author">
+                                        <div class="rts__single--testimonial--author--meta">
+                                            <div class="rts__author--img">
+                                                <img src="assets/images/testimonial/author-3.png" alt="author">
+                                            </div>
+                                            <div class="rts__author--info">
+                                                <h5 class="mb-0 jyesha">Jayalekshmi - Kerala</h5>
+
+                                            </div>
+                                        </div>
+                                        <div class="rts__single--testimonial--quote">
+                                            <img src="assets/images/testimonial/quote.svg" alt="quote">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single slide end -->
+                            <!-- single slide -->
+                            <div class="swiper-slide">
+                                <div class="rts__single--testimonial">
+                                    <div class="rts__rating--star">
+                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                        <i class="fa-sharp fa-light fa-star"></i>
+                                    </div>
+                                    <p class="rts__single--testimonial--text">
+                                        Hey Guys…..
+                                        <br>I am Jayesh and I am first year student here. I came to know about this
+                                        university through one of my friend and also searched about
+                                        this university. Its very budget friendly as Tuition fees and accommodation
+                                        charges are very nominal as compare to other European Medical
+                                        Universities. I met other international students here from Germany, Turkey, Iran
+                                        etc. <br>Thank you.
+                                    </p>
+                                    <div class="rts__single--testimonial--author">
+                                        <div class="rts__single--testimonial--author--meta">
+                                            <div class="rts__author--img">
+                                                <img src="assets/images/testimonial/author-3.png" alt="author">
+                                            </div>
+                                            <div class="rts__author--info">
+                                                <h5 class="mb-0 jyesh">Jayesh Kalal - Rajasthan</h5>
+
+                                            </div>
+                                        </div>
+                                        <div class="rts__single--testimonial--quote">
+                                            <img src="assets/images/testimonial/quote.svg" alt="quote">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single slide end -->
+                            <!-- single slide -->
+                            <div class="swiper-slide">
+                                <div class="rts__single--testimonial">
+                                    <div class="rts__rating--star">
+                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                        <i class="fa-sharp fa-light fa-star"></i>
+                                    </div>
+                                    <p class="rts__single--testimonial--text">
+                                        Hello Friends …
+                                        <br>I am 4th year student of medical course at University of Kragujevac. In 4th
+                                        year our Internal Medicine and radiology classes are taking
+                                        place at Hospitals. Teachers and Professors are very helpful they are teaching
+                                        us each and every topic with explanation. Weather is very good and
+                                        locals are also very welcoming.
+                                    </p>
+                                    <div class="rts__single--testimonial--author">
+                                        <div class="rts__single--testimonial--author--meta">
+                                            <div class="rts__author--img">
+                                                <img src="assets/images/testimonial/author-3.png" alt="author">
+                                            </div>
+                                            <div class="rts__author--info">
+                                                <h5 class="mb-0 kishr">Kashish Phore - Delhi</h5>
+
+                                            </div>
+                                        </div>
+                                        <div class="rts__single--testimonial--quote">
+                                            <img src="assets/images/testimonial/quote.svg" alt="quote">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single slide end -->
+                            <!-- single slide -->
+                            <div class="swiper-slide">
+                                <div class="rts__single--testimonial">
+                                    <div class="rts__rating--star">
+                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                        <i class="fa-sharp fa-light fa-star"></i>
+                                    </div>
+                                    <p class="rts__single--testimonial--text">
+                                        "Studying medicine at my university has been an incredible experience. The
+                                        faculty's expertise, diverse learning opportunities, and emphasis on
+                                        practical skills have equipped me with the knowledge and confidence to pursue my
+                                        passion for healthcare."
+                                    </p>
+                                    <div class="rts__single--testimonial--author">
+                                        <div class="rts__single--testimonial--author--meta">
+                                            <div class="rts__author--img">
+                                                <img src="assets/images/testimonial/author-3.png" alt="author">
+                                            </div>
+                                            <div class="rts__author--info">
+                                                <h5 class="mb-0 amit">Amit Kumar Parmar – Haryana</h5>
+
+                                            </div>
+                                        </div>
+                                        <div class="rts__single--testimonial--quote">
+                                            <img src="assets/images/testimonial/quote.svg" alt="quote">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single slide end -->
+                            <!-- single slide -->
+                            <div class="swiper-slide">
+                                <div class="rts__single--testimonial">
+                                    <div class="rts__rating--star">
+                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                        <i class="fa-sharp fa-light fa-star"></i>
+                                    </div>
+                                    <p class="rts__single--testimonial--text">
+                                        "My university fosters a dynamic learning environment for medical students. The
+                                        teaching faculty are not only knowledgeable but also incredibly
+                                        supportive, always willing to go the extra mile to ensure our success. The
+                                        atmosphere is conducive to learning, with state-of-the-art facilities and
+                                        opportunities for hands-on experience that truly enhance our medical education
+                                        journey."
+                                    </p>
+                                    <div class="rts__single--testimonial--author">
+                                        <div class="rts__single--testimonial--author--meta">
+                                            <div class="rts__author--img">
+                                                <img src="assets/images/testimonial/author-3.png" alt="author">
+                                            </div>
+                                            <div class="rts__author--info">
+                                                <h5 class="mb-0 mt-3 vaibh">Vaibhavi Gautam – Himachal Pradesh</h5>
+
+                                            </div>
+                                        </div>
+                                        <div class="rts__single--testimonial--quote">
+                                            <img src="assets/images/testimonial/quote.svg" alt="quote">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single slide end -->
+                            <!-- single slide -->
+                            <div class="swiper-slide">
+                                <div class="rts__single--testimonial">
+                                    <div class="rts__rating--star">
+                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                        <i class="fa-sharp fa-light fa-star"></i>
+                                    </div>
+                                    <p class="rts__single--testimonial--text">
+                                        "Choosing my university was one of the best decisions I've made. The teaching
+                                        faculty are experts in their fields, providing invaluable guidance and
+                                        support throughout my medical education. The atmosphere is vibrant and conducive
+                                        to learning, fostering collaboration and growth among
+                                        students. Additionally, being located in such a dynamic city provides countless
+                                        opportunities for clinical exposure and cultural enrichment."
+                                    </p>
+                                    <div class="rts__single--testimonial--author">
+                                        <div class="rts__single--testimonial--author--meta">
+                                            <div class="rts__author--img">
+                                                <img src="assets/images/testimonial/author-3.png" alt="author">
+                                            </div>
+                                            <div class="rts__author--info">
+                                                <h5 class="mb-0">Shagun Rana – Chandigarh</h5>
+
+                                            </div>
+                                        </div>
+                                        <div class="rts__single--testimonial--quote">
+                                            <img src="assets/images/testimonial/quote.svg" alt="quote">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single slide end -->
+                            <!-- single slide -->
+                            <div class="swiper-slide">
+                                <div class="rts__single--testimonial">
+                                    <div class="rts__rating--star">
+                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                        <i class="fa-sharp fa-light fa-star"></i>
+                                    </div>
+                                    <p class="rts__single--testimonial--text">
+                                        "The admission process at my university was seamless and straightforward, making
+                                        it easy for me to transition into my medical studies. Once
+                                        enrolled, I found the university to be welcoming and supportive, with helpful
+                                        staff guiding me through orientation and beyond. Overall, my
+                                        experience with both the admission process and the university itself has been
+                                        nothing short of excellent."
+                                    </p>
+                                    <div class="rts__single--testimonial--author">
+                                        <div class="rts__single--testimonial--author--meta">
+                                            <div class="rts__author--img">
+                                                <img src="assets/images/testimonial/author-3.png" alt="author">
+                                            </div>
+                                            <div class="rts__author--info">
+                                                <h5 class="mb-0 ram">Shri Ram Sharma – Haryana</h5>
+
                                             </div>
                                         </div>
                                         <div class="rts__single--testimonial--quote">
@@ -880,10 +1374,63 @@
                 </div>
             </div>
         </div>
+
     </section>
     <!-- student feedback end -->
+
+
+    <section class="we-offer-area text-center bg-gray mt-5 rts-padingrts ">
+        <div class="container">
+            <div class="row our-offer-items less-carousel ">
+                <!-- Single Item -->
+                <div class="col-md-5 col-sm-6 equal-height">
+                    <div class="itemmeid Donation">
+                        <i class="fa-solid fa-euro-sign"></i>
+                        <h4 class="mt-3">BEST QUALITY WITH IN BUDGET</h4>
+                        <p class="">
+                            No Donation Direct Admission, Tuition Fee of Less Than 2 Lac Per Year
+                        </p>
+                    </div>
+                </div>
+                <!-- End Single Item -->
+
+                <!-- Single Item -->
+                <div class="col-md-2 col-sm-6">
+                    <!-- <div class="itemmeid">
+                        <i class="fa-solid fa-bed"></i>
+                        <h4 class=""> Bachelor of Pharmacy </h4>
+                        <p>
+                            BPHARM: Essential expertise, improving health outcomes through precise medication
+                            management, ensuring wellness and vitality.
+                        </p>
+                    </div> -->
+                </div>
+                <!-- End Single Item -->
+
+                <!-- Single Item -->
+                <div class="col-md-5 col-sm-6 equal-height">
+                    <div class="itemmeid Donation">
+                        <i class="fa-solid fa-plane-up"></i>
+                        <h4 class="mt-3">100% VISA COUNSELLING HELP </h4>
+                        <p>
+                            Visa Assistance, Authorized Counselling Services
+                        </p>
+                    </div>
+                </div>
+                <!-- End Single Item -->
+
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+
     <!-- apply start -->
-    <section class="rts-application-area moving rts-section-padding v_1" id="contact">
+    <section class="rts-application-area moving rts-section-padding1 v_1" id="contact">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-sm-12">
@@ -895,15 +1442,35 @@
                 </div>
             </div>
             <!-- application form -->
-            <div class="row justify-content-md-center">
-                <div class="col-md-11 col-lg-6 col-xl-7">
+            <div class="row ">
+                <div class="col-md-11 col-lg-6 col-xl-7 align-items-center justify-content-center d-grid">
                     <div class="rts-admission-form-image">
-                        <img src="assets/images/feature/admission-form.jpg" alt="">
+                        <div class="d-flex align-items-center justify-content-center">
+
+                            <img src="assets/images/brand/Web Celebrating.jpg" alt="">
+                        </div>
+                        <div class=" align-items-center justify-content-center">
+
+                            <h4 class="mt-5">For Further Information Please Login </h4>
+
+                        </div>
+                        <p class="exceleducation rts-theme-btn mt-5">
+                            <a href="https://exceleducationgroup.org/">
+                                www.exceleducationgroup.org
+                            </a>
+                        </p>
+
+                        <span>
                     </div>
-                    <div class="rts-section-big-text">
-                        Admission Now
-                    </div>
+
                 </div>
+                <!-- <img src="assets/images/feature/admission-form.jpg" alt=""> -->
+
+
+                <!-- <div class="rts-section-big-text">
+                        Admission Now
+                    </div> -->
+
                 <div class="col-md-11 col-lg-6 col-xl-5">
                     <div class="rts-application-form">
                         <div class="rts-application-form-content">
@@ -931,30 +1498,16 @@
                                     </div>
                                 </div>
                                 <div class="rts-input rt-flex">
-                                    <div class="single-input">
-                                        <input type="text" name="address" id="address" placeholder="address">
 
-                                    </div>
                                     <div class="single-input">
                                         <input type="text" name="city" id="city" placeholder="City">
                                     </div>
-                                </div>
-                                <div class="rts-input rt-flex">
                                     <div class="single-input">
-                                        <input type="text" name="country" id="country" placeholder="Country">
-
-                                    </div>
-                                    <div class="single-input">
-                                        <input type="number" name="zip" id="zipcode" placeholder="Zip Code">
-
+                                        <input type="text" name="neet" id="neet" placeholder="NEET Marks (if appeared)">
                                     </div>
                                 </div>
-                                <div class="rts-input w-full">
-                                    <div class="single-input">
-                                        <input type="text" name="data" id="date" placeholder="dd/mm/yy">
 
-                                    </div>
-                                </div>
+
                                 <div class="rts-input w-full">
                                     <div class="single-input">
                                         <textarea name="msg" id="message" placeholder="Enter Your Comments"></textarea>
@@ -1019,30 +1572,36 @@
                         </p>
                         <div class="footer__widget--social">
                             <ul class="social">
-                                <li class="social__link"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                                <li class="social__link"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                                <li class="social__link"><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-                                <li class="social__link"><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                                <li class="social__link"><a href="https://www.facebook.com/exceledugrp"><i
+                                            class="fa-brands fa-facebook"></i></a></li>
+                                <li class="social__link"><a href="https://www.instagram.com/excel_education_group/"><i
+                                            class="fa-brands fa-instagram"></i></a></li>
+                                <li class="social__link"><a href="https://exceleducationgroup.org/"><i
+                                            class="fa-solid fa-browser"></i></a></li>
+                                <li class="social__link"><a href="https://www.youtube.com/@exceleducationgroup"><i
+                                            class="fa-brands fa-youtube"></i></a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="col-lg-5 col-md-6 col-sm-6">
                     <div class="footer__widget">
-                        <h6 class="footer__widget--title">Useful Link's</h6>
+                        <h6 class="footer__widget--title">Visit US</h6>
                         <div class="footer__widget--menu">
+
                             <ul>
-                                <li><a href="#about">About</a></li>
-                                <li><a href="#serbia">Kragujevac</a></li>
-                                <li><a href="#history">History</a></li>
-                                <li><a href="#testimonial">Testimonial</a></li>
-                                <li><a href="#contact">Contact</a></li>
+                                <li>Delhi office :- #17-18, Ground Floor , 10/54 , B.D. Chambers D.B.
+                                    Gupta Road, Karol Bagh, New Delhi – 110005</li>
+                                <li>Contact :- +91 8360754797</li>
+                                <li>Punjab office :- SSS – 88, Phase 9, (Near Majestic Hotel)
+                                    S.A.S. Nagar, Mohali – Punjab – 160063</li>
+                                <li>Contact :- +91 9815875173</li>
 
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-6 col-sm-6">
+                <!-- <div class="col-lg-2 col-md-6 col-sm-6">
                     <div class="footer__widget">
                         <h6 class="footer__widget--title">Course's</h6>
                         <div class="footer__widget--menu">
@@ -1062,7 +1621,7 @@
                             </ul>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="footer__widget">
                         <h6 class="footer__widget--title">Quick Button</h6>
@@ -1138,12 +1697,12 @@
                     </li>
                 </ul>
             </nav>
-            <div class="offcanvase__info--content mt--30">
+            <!-- <div class="offcanvase__info--content mt--30">
                 <a href="index.html"><span><i class="fa-sharp fa-light fa-phone"></i></span> + (381) 34 370-270;
                 </a>
                 <a href="#"><span><i class="fa-sharp fa-light fa-location-dot"></i></span>Лицеја Кнежевине Србије 1А,
                     Kragujevac 34000, Serbia</a>
-            </div>
+            </div> -->
         </div>
         <!-- mobile menu area end -->
     </div>
@@ -1191,6 +1750,9 @@
     <script src="assets/js/plugins/nice-select.min.js"></script>
     <!-- main Js -->
     <script src="assets/js/main.js"></script>
+
+
+
     <script>
         // Smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -1203,8 +1765,10 @@
             });
         });
     </script>
+
+
+    <!-- counterstart -->
     <script>
-        // Function to animate numbers from a starting point to the target number
         function animateNumber(id, start, end, duration) {
             let startTimestamp = null;
             const step = (timestamp) => {
@@ -1217,74 +1781,42 @@
             };
             window.requestAnimationFrame(step);
         }
-
-        // Intersection Observer configuration
         const options = {
             root: null,
             rootMargin: '0px',
-            threshold: 0.5 // Percentage of the target element's visibility required to trigger the animation
+            threshold: 0.5
         };
-
-        // Callback function to start animation when the section becomes visible
         function startAnimation(entries, observer) {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    animateNumber('number1', 0, 48874, 2000); // Start from 0, end at 20559, duration 2000ms
-                    animateNumber('number2', 0, 5198, 2000); // Start from 0, end at 1492, duration 2000ms
-                    animateNumber('number3', 0, 1132, 2000); // Start from 0, end at 300000, duration 2000ms
-                    observer.unobserve(entry.target); // Stop observing once animation starts
+                    animateNumber('number1', 0, 15000, 2000);
+                    animateNumber('number2', 0, 1300, 2000);
+                    animateNumber('number3', 0, 1132, 2000);
+                    observer.unobserve(entry.target);
                 }
             });
         }
-
-        // Initialize Intersection Observer
         const observer = new IntersectionObserver(startAnimation, options);
-
-        // Target the section containing the numbers
         const section = document.querySelector('.single-about-info');
-
-        // Start observing the section
         observer.observe(section);
     </script>
+    <!-- counterend -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- emailjs start -->
     <script>
-        // emailjs
-
-
         function sendCase() {
-            // Retrieve form values
             let firstname = document.getElementById("firstname").value;
             let lastname = document.getElementById("lastname").value;
-            let address = document.getElementById("address").value;
-            let country = document.getElementById("country").value;
+            let neet = document.getElementById("neet").value;
             let email = document.getElementById("email").value;
             let mobile = document.getElementById("mobile").value;
-            let date = document.getElementById("date").value;
             let city = document.getElementById("city").value;
-            let zipcode = document.getElementById("zipcode").value;
             let message = document.getElementById("message").value;
-
             // Regular expressions for validation
             let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             let mobileRegex = /^\d{10}$/;
-            let dateRegex = /^\d{2}\/\d{2}\/\d{2}$/;
-            let zipcodeRegex = /^\d{6}$/;
-
             // Validate each field
-            if (firstname === "" || lastname === "" || address === "" || country === "" || email === "" || mobile === "" || date === "" || city === "" || zipcode === "" || message === "") {
+            if (firstname === "" || lastname === "" || neet === "" || email === "" || mobile === "" || city === "" || message === "") {
                 alert("Please fill in all fields.");
                 return;
             }
@@ -1296,27 +1828,14 @@
                 alert("Please enter a valid 10-digit mobile number.");
                 return;
             }
-            if (!dateRegex.test(date)) {
-                alert("Please enter a valid date in the format dd/mm/yy.");
-                return;
-            }
-            if (!zipcodeRegex.test(zipcode)) {
-                alert("Please enter a valid 5-digit zip code.");
-                return;
-            }
-
-            // If all fields are valid, proceed to send email
             emailjs.init("fSjEBmQ1V-58CY5U6");
             let params = {
                 firstname: firstname,
                 lastname: lastname,
-                address: address,
-                country: country,
+                neet: neet,
                 email: email,
                 mobile: mobile,
-                date: date,
                 city: city,
-                zipcode: zipcode,
                 message: message
             };
             let serviceID = "service_sp6umke";
@@ -1326,16 +1845,34 @@
                 .then(function (response) {
                     console.log('SUCCESS!', response.status, response.text);
                     alert("Email sent successfully!");
-                    document.getElementById("emailForm").reset(); // Reset the form after sending email
+                    document.getElementById("emailForm").reset();
                 })
                 .catch(function (error) {
                     console.log('FAILED...', error);
                     alert("Error sending email. Please try again later.");
                 });
         }
-
     </script>
 
+    <!-- EmailjsEnd -->
+
+    <!-- whatspp -->
+    <script>$(document).scroll(function () {
+            var i = $(this).scrollTop();
+            if (i > 100) {
+                $('.wppBtn').fadeIn();
+            } else {
+                $('.wppBtn').fadeOut();
+            }
+        });</script>
+    <!-- whatsppend -->
+
+
+    <!-- AOS start -->
+    <script>
+        AOS.init();
+    </script>
+    <!-- AOS End -->
 </body>
 
 </html>
