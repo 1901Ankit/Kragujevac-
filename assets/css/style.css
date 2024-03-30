@@ -15950,9 +15950,9 @@ xclip
   }
 }
 .rts__single--testimonial--author--meta .rts__author--info h5 {
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1;
-  font-size: 20px;
+  font-size: 16px;
   margin-bottom: 5px !important;
 }
 .rts__single--testimonial--author--meta .rts__author--info .designation {
@@ -15960,8 +15960,8 @@ xclip
   color: var(--rt-heading);
 }
 .rts__single--testimonial--quote {
-  width: 70px;
-  height: 55px;
+  width: 50px;
+  height: 60px;
 }
 @media screen and (max-width: 576px) {
   .rts__single--testimonial--quote {
@@ -17719,7 +17719,7 @@ xclip
 }
 @media screen and (max-width: 992px) {
   .banner.v__2 .banner__wrapper .banner__slides--content {
-    padding-bottom: 150px;
+    padding-top: 400px;
   }
 }
 .banner.v__2 .banner__wrapper .banner__slides--content--sub {
@@ -25799,5 +25799,5 @@ xclip
 }
 
 .Donation{
-  height: 360px;
+  height: 410px;
 }
