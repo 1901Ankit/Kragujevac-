@@ -1681,7 +1681,7 @@
                 alert("Please enter a valid 10-digit mobile number.");
                 return;
             }
-            emailjs.init("fSjEBmQ1V-58CY5U6");
+            emailjs.init("QDtVOSgDLmjCOF3eb");
             let params = {
                 firstname: firstname,
                 lastname: lastname,
@@ -1691,17 +1691,17 @@
                 city: city,
                 message: message
             };
-            let serviceID = "service_sp6umke";
-            let templateID = "template_dyzdswg";
+            let serviceID = "service_so0932b";
+            let templateID = "template_it2g6mf";
 
             emailjs.send(serviceID, templateID, params)
                 .then(function (response) {
-                    console.log('SUCCESS!', response.status, response.text);
+                    // console.log('SUCCESS!', response.status, response.text);
                     alert("Email sent successfully!");
-                    document.getElementById("emailForm").reset();
+                    // document.getElementById("emailForm").reset();
                 })
                 .catch(function (error) {
-                    console.log('FAILED...', error);
+                    // console.log('FAILED...', error);
                     alert("Error sending email. Please try again later.");
                 });
         }
