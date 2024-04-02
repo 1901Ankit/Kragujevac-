@@ -109,7 +109,7 @@ body {
   width: 45%;
 }
 .navbimages1 {
-  width: 25%;
+  width: 22%;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   body {
@@ -25801,3 +25801,4 @@ xclip
 .Donation{
   height: 410px;
 }
+

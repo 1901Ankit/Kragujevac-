@@ -76,7 +76,8 @@
                         <div class="header__right">
                             <div class="logoheader">
                                 <a href="index.html" class="header__logo--link">
-                                    <img src="assets/Excel Education Group Logo Final.svg" class="navbimages" alt="">
+                                    <img src="assets/Excel Education Group Logo White Final.svg" class="navbimages"
+                                        alt="">
                                 </a>
                             </div>
                         </div>
@@ -1369,8 +1370,7 @@
 
                                     </div>
                                     <div class="single-input">
-                                        <input type="number" id="mobile" name="mobile" maxlength="10"
-                                            placeholder="Phone">
+                                        <input type="tel" id="mobile" name="mobile" maxlength="10" placeholder="Phone">
 
                                     </div>
                                 </div>
@@ -1667,7 +1667,7 @@
             let message = document.getElementById("message").value;
             // Regular expressions for validation
             let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            let mobileRegex = /^\d{10}$/;
+            let mobileRegex = /^\+?\d{1,3}?[- .]?\(?\d{1,3}\)?[- .]?\d{1,4}[- .]?\d{4}$/;
             // Validate each field
             if (firstname === "" || lastname === "" || neet === "" || email === "" || mobile === "" || city === "" || message === "") {
                 alert("Please fill in all fields.");
@@ -1679,6 +1679,10 @@
             }
             if (!mobileRegex.test(mobile)) {
                 alert("Please enter a valid 10-digit mobile number.");
+                return;
+            }
+            if (mobile.startsWith("1") || mobile.startsWith("2") || mobile.startsWith("3") || mobile.startsWith("4") || mobile.startsWith("5")) {
+                alert("Mobile number cannot start with digits 1 to 5.");
                 return;
             }
             emailjs.init("QDtVOSgDLmjCOF3eb");
@@ -1698,13 +1702,20 @@
                 .then(function (response) {
                     // console.log('SUCCESS!', response.status, response.text);
                     alert("Email sent successfully!");
-                    // document.getElementById("emailForm").reset();
+                    document.getElementById("emailForm").reset();
                 })
                 .catch(function (error) {
                     // console.log('FAILED...', error);
                     alert("Error sending email. Please try again later.");
                 });
         }
+        document.getElementById("mobile").addEventListener("input", function (event) {
+            let mobileInput = event.target.value;
+            // If mobile number starts with digits 1 to 5, remove the last entered character
+            if (mobileInput.startsWith("1") || mobileInput.startsWith("2") || mobileInput.startsWith("3") || mobileInput.startsWith("4") || mobileInput.startsWith("5")) {
+                event.target.value = mobileInput.slice(0, -1);
+            }
+        });
     </script>
 
     <!-- EmailjsEnd -->
