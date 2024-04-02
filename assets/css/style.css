@@ -109,7 +109,7 @@ body {
   width: 45%;
 }
 .navbimages1 {
-  width: 22%;
+  width: 20%;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   body {
@@ -333,6 +333,12 @@ p {
   }
   .navbimages1 {
     width: 30% !important;
+  }
+  .thnw{
+    font-size: 24px !important;
+  }
+  .thnw1{
+    font-size: 22px !important;
   }
   .umloc {
     font-size: 45px !important;
@@ -25802,3 +25808,12 @@ xclip
   height: 410px;
 }
 
+  /* thnqyou */
+  .thnw{
+    font-size:55px;
+    font-weight: 500;
+  }
+  .thnw1{
+    font-size:35px;
+    font-weight: 500;
+  }
