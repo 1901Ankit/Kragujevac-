@@ -411,6 +411,13 @@ ul.liststyle.bullet li {
   .navbimages {
     width: 50% !important;
   }
+  .systemview{
+    display: none !important;
+  }
+  .mobileviewheader{
+    display: block !important;
+  }
+
   .navbimages1 {
     width: 30% !important;
   }
@@ -20710,6 +20717,10 @@ Copyright (c) 2015 Daniel Eden
   background-color: #fff !important;
   color: #e8a829 !important;
 }
+.we-offer-area.text-center .itemmeid:hover ul li {
+  color: #ffffff !important;
+  /* color: #890c25 !important; */
+}
 .we-offer-area.text-left .itemmeid i {
   background: #00a01d;
   -webkit-border-radius: 50%;
@@ -20875,4 +20886,11 @@ Copyright (c) 2015 Daniel Eden
 .thnw1 {
   font-size: 35px;
   font-weight: 500;
+}
+
+.systemview{
+  display: block;
+}
+.mobileviewheader{
+  display: none ;
 }
